@@ -1,0 +1,35 @@
+MYSQL
+select specific rows
+
+select distinct city from emp_details;
+
+
+count rows
+select count(name) as count_name from emp_details;
+
+
+Method of sum of row
+select sum(salary) as sum_salary from emp_details;
+
+Method of avg of row
+select avg(salary) as average_salary from emp_details;
+
+
+how to select specific colums in table
+select name, age, city from emp_details;
+
+USE WHERE USE
+select * from emp_details where age > 30;
+select name, sex, city from emp_details where Sex = 'F';
+
+USE OF OR
+select * from emp_details where
+city = 'Chicago' or city = 'Austin';
+
+USE OF IN
+select * from emp_details where
+city in ('Chicago', 'Austin');
+
+USE OF BETWEEN
+select * from emp_details where
+doj between '2000-01-01' and '2010-12-31';
